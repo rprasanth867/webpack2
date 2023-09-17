@@ -5,3 +5,9 @@ body {
     background-color: variable.$bg;
     color: var(--text);
 }
+
+main {
+    background-image: url("../assets/images/webpack.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
