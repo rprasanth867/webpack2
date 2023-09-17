@@ -1,3 +1,5 @@
+import "./style/index.scss";
+
 const details = {
     name: "Prasanth",
     mobile: "9985702662",
