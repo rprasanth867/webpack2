@@ -1,4 +1,10 @@
+import React from "react";
+import { render } from "react-dom";
+
 import "./style/index.scss";
+import App from "./App";
+
+render(<App />, document.getElementById('root'));
 
 const details = {
     name: "Prasanth",
@@ -13,4 +19,4 @@ const moreDetails = {
 
 
 console.log(details);
-console.log(moreDetails);
+console.log(moreDetails?.age);

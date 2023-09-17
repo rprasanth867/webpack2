@@ -17,14 +17,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(?:js|mjs|cjs)$/,
+        test: /\.(?:js|jsx|mjs|cjs)$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ['@babel/preset-env']
-          }
-        }
+        loader: "babel-loader"
       },
       {
         test: /\.s?css$/i,
@@ -36,6 +31,9 @@ module.exports = {
         ],
       },
     ]
+  },
+  resolve: {
+    extensions: ['.js', '.jsx']
   },
   plugins: [
     new MiniCssExtractPlugin()
