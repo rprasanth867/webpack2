@@ -4,4 +4,11 @@ const details = {
     occupation: "Frontend Developer"
 };
 
+const moreDetails = {
+    ...details,
+    age: 26
+}
+
+
 console.log(details);
+console.log(moreDetails);
