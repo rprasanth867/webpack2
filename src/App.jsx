@@ -1,12 +1,15 @@
 import React from 'react';
-import Details from './Details';
+import Details from './components/Details';
+import Header from './components/Header';
+import "./App.scss";
+import { DisplayImages } from './components/DisplayImages';
 
 function App() {
     return (
         <main>
-            <h1>Hello, I'm learning Webpack 5</h1>
-            <h2>My Details: </h2>
+            <Header />
             <Details />
+            <DisplayImages />
         </main>
     )
 }
