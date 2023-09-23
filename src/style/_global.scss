@@ -1,27 +1,26 @@
-
-@use 'variable';
+@use "variable";
 
 body {
-    background-color: variable.$bg;
-    color: var(--text);
+  background-color: variable.$bg;
+  color: var(--text);
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .square-200 {
-    width: 200px;
-    height: 200px;
+  width: 200px;
+  height: 200px;
 }
 
 .obj-fit {
-    object-fit: contain;
+  object-fit: contain;
 }
 
 .images-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
 }

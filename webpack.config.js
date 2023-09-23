@@ -27,17 +27,17 @@ module.exports = {
       {
         test: /\.(?:js|jsx|mjs|cjs)$/,
         exclude: /node_modules/,
-        loader: "babel-loader"
+        loader: 'babel-loader'
       },
       {
         test: /\.s?css$/i,
         use: [
           MiniCssExtractPlugin.loader,
-          "css-loader",
-          "postcss-loader",
-          "sass-loader"
-        ],
-      },
+          'css-loader',
+          'postcss-loader',
+          'sass-loader'
+        ]
+      }
     ]
   },
   resolve: {
@@ -45,7 +45,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./public/index.html"
+      template: './public/index.html'
     }),
     new MiniCssExtractPlugin()
   ],
@@ -53,5 +53,5 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true
-  },
+  }
 };
