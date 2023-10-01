@@ -4,7 +4,7 @@ import jpg from '../../assets/images/goku-dragon-ball-kai-art.jpg';
 import png from '../../assets/images/goten.png';
 import Svg from '../../assets/images/webpack.svg';
 
-export function DisplayImages() {
+export default function DisplayImages() {
 
   return (
     <section className="images-wrapper" id="images-section">

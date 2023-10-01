@@ -3,6 +3,7 @@
 body {
   background-color: variable.$bg;
   color: var(--text);
+  margin: 0px;
 }
 
 .text-center {
@@ -23,4 +24,8 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.detials-images-wrapper {
+  padding: 0px 10px 10px 10px;
 }

@@ -1,16 +1,12 @@
 import React from 'react';
-import Details from './components/Details';
-import Header from './components/Header';
+import { RouterProvider } from 'react-router-dom';
+
 import './App.scss';
-import { DisplayImages } from './components/DisplayImages';
+import routes from './routers/rootRoute';
 
 function App() {
   return (
-    <main>
-      <Header />
-      <Details />
-      <DisplayImages />
-    </main>
+    <RouterProvider router={routes} />
   );
 }
 
